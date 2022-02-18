@@ -99,7 +99,6 @@
 </template>
 
 <script lang="ts">
-vue add vuetify
 import { onMounted, ref } from 'vue';
 import { HighestValueSingleDayData, SingleDayData } from '@/APISchema';
 
