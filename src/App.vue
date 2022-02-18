@@ -1,17 +1,37 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <div id="app">
+    <div id="nav">
+      <nav class="navbar" role="navigation" aria-label="main navigation" >
+        <div>
+          <router-link :to="{ name: 'Home' }" class="navbar-item">
+            <img src="https://docs.knownorigin.io/press-kit/Black-blue-ko-logo.svg"  height="28" alt="Knownorigin logo">
+          </router-link>
+        </div>
+      </nav>
+    </div>
+    <SalesStats />
+    <section>
+      <div >
+        <p>
+          KO sales stats app
+        </p>
+      </div>
+    </section>
+    <footer>
+    </footer>
+  </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+import SalesStats from '@/Views/SalesStats.vue';
 
 export default defineComponent({
   name: 'App',
   components: {
-    HelloWorld,
+    SalesStats,
   },
+  methods: {},
 });
 </script>
 
